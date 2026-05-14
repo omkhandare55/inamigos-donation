@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InAmigos Foundation | Official Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <span class="logo-text">InAmigos <span class="highlight">Foundation</span></span>
+            </div>
+            <nav class="nav-links" style="align-items: center;">
+                <a href="#home">Homepage</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Service</a>
+                <a href="#contact">Contact Page</a>
+                <a href="#volunteer">Volunteer</a>
+                <a href="https://inamigosfoundation.org.in/" target="_blank" style="background: var(--primary); color: white; padding: 8px 20px; border-radius: 99px; font-weight: 600; box-shadow: 0 4px 10px rgba(249, 115, 22, 0.2);">Main Website ↗</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Homepage Section (Donation Hero) -->
+        <section id="home" class="split-layout container section-padding">
+            <!-- Left Side: Impact Information -->
+            <div class="impact-section">
+                <div class="badge">NGO Certified 80G & 12A</div>
+                <h1 class="hero-title">Make a Difference with Your Donation Today.</h1>
+                <p class="hero-desc">Your generosity directly supports our core initiatives across India. At InAmigos Foundation, we believe in the power of collective action to bring positive change.</p>
+                
+                <div class="trust-indicators">
+                    <div class="trust-badge">✅ 80G & 12A Certified (Tax Exempt)</div>
+                    <div class="trust-badge">✅ NITI Aayog Registered</div>
+                    <div class="trust-badge">✅ ISO 9001:2015 Certified</div>
+                </div>
+            </div>
+
+            <!-- Right Side: Donation Form -->
+            <div class="donation-section">
+                <div class="donation-card">
+                    <h2>Choose Donation Amount</h2>
+                    <p class="subtitle">Secure and encrypted payment</p>
+
+                    <div class="amount-options">
+                        <button class="amount-btn" data-amount="500">₹ 500</button>
+                        <button class="amount-btn active" data-amount="1000">₹ 1000</button>
+                        <button class="amount-btn" data-amount="2500">₹ 2500</button>
+                        <button class="amount-btn" data-amount="5000">₹ 5000</button>
+                    </div>
+
+                    <div class="custom-amount">
+                        <span class="currency">₹</span>
+                        <input type="number" id="customAmount" placeholder="Enter custom amount" value="1000">
+                    </div>
+
+                    <form id="donorForm" class="donor-form">
+                        <div class="form-group">
+                            <label>Full Name *</label>
+                            <input type="text" id="donorName" required placeholder="John Doe">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email Address *</label>
+                                <input type="email" id="donorEmail" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number *</label>
+                                <input type="tel" id="donorPhone" required placeholder="+91 9876543210">
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="donate-submit-btn">
+                            Proceed to Donate <span id="displayAmount">₹ 1000</span>
+                        </button>
+                        <p class="secure-text">🔒 100% Secure Processing via Razorpay</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about section-padding bg-light">
+            <div class="container text-center">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">Dedicated to bringing positive change in society since September 2020.</p>
+                <div class="about-grid mt-4">
+                    <div class="about-card">
+                        <svg class="about-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M3 21h18"></path><path d="M9 8h1"></path><path d="M9 12h1"></path><path d="M9 16h1"></path><path d="M14 8h1"></path><path d="M14 12h1"></path><path d="M14 16h1"></path><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path></svg>
+                        <h3>Our Mission</h3>
+                        <p>Founded by Mr. Govind Shukla, InAmigos Foundation is a Section 8 registered non-profit working with complete transparency to serve humanity with compassion.</p>
+                    </div>
+                    <div class="about-card">
+                        <svg class="about-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                        <h3>Our Credentials</h3>
+                        <p>We hold 80G & 12A certifications, NITI Aayog registration, and IAF ISO 9001:2015 certification for high-quality operations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section -->
+        <section id="services" class="services section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">Our Service Causes</h2>
+                <p class="section-subtitle text-center">The core initiatives driving our mission.</p>
+                
+                <div class="causes-grid mt-4">
+                    <div class="cause-card">
+                        <div class="cause-icon icon-education">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        </div>
+                        <div class="cause-info">
+                            <h3>Project Bachpanshala</h3>
+                            <p>Quality education for underprivileged children.</p>
+                        </div>
+                    </div>
+                    <div class="cause-card">
+                        <div class="cause-icon icon-women">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path></svg>
+                        </div>
+                        <div class="cause-info">
+                            <h3>Project Udaan</h3>
+                            <p>Women empowerment & financial independence.</p>
+                        </div>
+                    </div>
+                    <div class="cause-card">
+                        <div class="cause-icon icon-animal">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5c2.5 0 4.5 2 4.5 4.5 0 1.5-1 3.5-3 6.5-1 1.5-1.5 1.5-1.5 1.5s-.5 0-1.5-1.5C8.5 13 7.5 11 7.5 9.5 7.5 7 9.5 5 12 5z"></path></svg>
+                        </div>
+                        <div class="cause-info">
+                            <h3>Project Jeev</h3>
+                            <p>Animal welfare, rescue, and protection.</p>
+                        </div>
+                    </div>
+                    <div class="cause-card">
+                        <div class="cause-icon icon-environment">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22v-7l-2-2"></path><path d="M17 8v.5a3.5 3.5 0 1 1-7 0V8a4 4 0 1 1 8 0V8a5 5 0 1 0-10 0v.5a3.5 3.5 0 1 0 7 0V8"></path></svg>
+                        </div>
+                        <div class="cause-info">
+                            <h3>Project Prakriti</h3>
+                            <p>Environmental conservation & sustainability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Sections: Volunteer -->
+        <section id="volunteer" class="volunteer section-padding bg-light">
+            <div class="container text-center">
+                <h2 class="section-title">Additional Sections: Become A Volunteer</h2>
+                <p class="section-subtitle">Step in, stand out, and create impact. Join our network of dedicated professionals.</p>
+                <a href="https://forms.gle/AB4c1hLaDDmtrKGU7" target="_blank" class="donate-submit-btn" style="display:inline-block; max-width: 300px; text-decoration: none;">Join Us Today</a>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="contact section-padding">
+            <div class="container text-center">
+                <h2 class="section-title">Contact Page</h2>
+                <p class="section-subtitle">Reach out to us to collaborate or learn more about our initiatives.</p>
+                
+                <div class="contact-grid mt-4" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; text-align: left;">
+                    <div>
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="color: var(--secondary);">Phone</h4>
+                            <p style="color: var(--text-muted);">+91 626 730 9902</p>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <h4 style="color: var(--secondary);">Email</h4>
+                            <p style="color: var(--text-muted);">inamigosfoundation@gmail.com</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--secondary);">Headquarters</h4>
+                            <p style="color: var(--text-muted);">Ward No. 5, Gram Post, Sipat Ujwal Nagar, Bilaspur. Chhattisgarh 495555</p>
+                        </div>
+                    </div>
+                    
+                    <form id="contactFormDetails" style="background: white; padding: 30px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid var(--border);">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 16px;">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 16px;">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" rows="4" required style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 16px; font-family: inherit;"></textarea>
+                        </div>
+                        <button type="submit" class="donate-submit-btn" style="padding: 12px;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer style="background: var(--secondary); color: white; padding: 30px 0; text-align: center;">
+        <div class="container">
+            <p>&copy; 2026 InAmigos Foundation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
