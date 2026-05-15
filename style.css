@@ -1,13 +1,13 @@
 :root {
-    --primary: #f97316; /* Original InAmigos Orange */
-    --primary-hover: #ea580c;
-    --secondary: #002147; /* Original InAmigos Dark Blue */
-    --text-dark: #333333;
+    --primary: #00CC83; /* Original InAmigos Green */
+    --primary-hover: #01B373;
+    --secondary: #1E1F26; /* Original InAmigos Dark Theme */
+    --text-dark: #191919;
     --text-muted: #666666;
     --bg-light: #f9f9f9;
     --border: #e2e8f0;
-    --font-main: 'Open Sans', 'Roboto', sans-serif;
-    --font-heading: 'Roboto', sans-serif;
+    --font-main: 'Quicksand', sans-serif;
+    --font-heading: 'Quicksand', sans-serif;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
